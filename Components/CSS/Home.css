@@ -1,17 +1,5 @@
-body{
-    background-image: url("/desktop-bitmap.jpg");
-    background-size: cover;
-    width: 100%;
-}
-@media (max-width: 770px) {
-    body{
-        background-image: url("/Bitmap.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        width: 100%;
-    }
-}
-ul{
+
+#navigation{
     background: rgba(255, 255, 255, 0.04);
     backdrop-filter: blur(40.774227142333984px);
 }
@@ -25,4 +13,16 @@ ul{
 #check:checked ~ ul{
     right: 0;
 }
-
+body{
+    background-image: url("/desktop-bitmap.jpg");
+    background-size: cover;
+    width: 100%;
+}
+@media (max-width: 770px) {
+    body{
+        background-image: url("/Bitmap.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+    }
+}
