@@ -1,26 +1,31 @@
 import './CSS/Home.css'
+import { useState } from 'react';
 
 
 function Home(){
     return(
-        <div className='m-8 sm:m-0 text-white'>
-            <nav className='flex justify-between items-center'>
-                <img src="../public/space-logo.png" alt="" className='sm:m-8'/>
-                <img src="../public/Group.svg" alt="" className='sm:hidden'/>
-                <ul className='sm:flex justify-between w-1/2 p-8 m-0 hidden' id='list'>
-                   <a href='/'><li className='underline underline-offset-32 decoration-2 cursor-pointer'>HOME</li></a>
-                   <a href='/destination'><li className='cursor-pointer'>DESTINATION</li></a>
-                   <a href="/crew"><li className='cursor-pointer'>CREW</li></a>
-                   <a href="/technology"><li className='cursor-pointer'>TECHNOLOGY</li></a>
+        <div className='text-white'>
+            <nav className='h-20 w-5/5 mt-8'>
+                <input type="checkbox" id="check"/>
+                <label for="check" class="cursor-pointer leading-20 float-right mr-8 text-4xl sm:hidden block">
+                    <i class='bx bx-menu'></i>
+                </label>
+                <img src="/space-logo.png" alt="" className='inline-block leading-20 sm:px-10 sm:py-8 pl-16'/>
+
+                <ul className='float-right flex flex-col items-start md:block p-8 pl-16 md:w-3/5 md:static fixed w-3/5 duration-1000 ease-in h-full -right-full text-center'>
+                   <li className='cursor-pointer block md:inline-block leading-20 sm:my-0 sm:mx-20 m-8 underline underline-offset-32 decoration-2'><a href='/' className="hover:text-gray-400 ease-in duration-300"><span className='nav-number'>00  </span>HOME</a></li>
+                   <li className='cursor-pointer block md:inline-block leading-20 sm:my-0 sm:mx-10 m-8'><a href='/destination' className="hover:text-gray-400 ease-in duration-300"><span className='nav-number'>01  </span>DESTINATION</a></li>
+                   <li className='cursor-pointer block md:inline-block leading-20 sm:my-0 sm:mx-10 m-8'><a href="/crew" className="hover:text-gray-400 ease-in duration-300"><span className='nav-number'>02  </span>CREW</a></li>
+                   <li className='cursor-pointer block md:inline-block leading-20 sm:my-0 sm:mx-10 m-8'><a href="/technology" className="hover:text-gray-400 ease-in duration-300"><span className='nav-number'>03  </span>TECHNOLOGY</a></li>
                 </ul>
             </nav>
-            <div className='mt-24 w-4/5  sm:ml-12 text-center md:ml-32 sm:flex' id='container'>
-                <div className='w-3/5' id='firstChild'>
-                    <p className='text-ash text-2xl tracking-widest' id='container'>SO, YOU WANT TO TRAVEL TO</p>
-                    <h1 className='text-white text-8xl sm:text-10xl font-bele tracking-wider mt-8'>SPACE</h1>
-                    <p className='text-ash text-xl mt-8 sm:w-3/5'>Let’s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we’ll give you a truly out of this world experience!</p>
+            <div className='flex flex-col sm:flex-row sm:mt-48 sm:justify-between items-center w-4/5 my-0 mx-auto text-center' id='container'>
+                <div className='sm:w-1/2 sm:text-left' id='firstChild'>
+                    <p className='text-ash text-2xl sm:text-3xl tracking-widest m-8'>SO, YOU WANT TO TRAVEL TO</p>
+                    <h1 className='text-white font-bele tracking-wider sm:text-10xl text-8xl m-8'>SPACE</h1>
+                    <p className='text-ash text-2xl sm:text-xl m-8 sm:w-3/5'>Let’s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we’ll give you a truly out of this world experience!</p>
                 </div>
-                <h2 className='bg-white text-black p-8 rounded-full w-32 h-32 mb-24 font-bele flex items-center ml-32 mt-16 track-widest text-center sm:w-48 sm:h-48 sm:text-2xl sm:ml-48 sm:justify-center'>EXPLORE</h2>
+                <h2 className='bg-white text-black p-8 rounded-full w-32 h-32 sm:h-64 sm:w-64 sm:text-3xl sm:p-16 m-8 mb-24 sm:mt-16 font-bele flex items-center track-widest text-center'>EXPLORE</h2>
             </div>
             
         </div>

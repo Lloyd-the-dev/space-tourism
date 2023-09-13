@@ -15,7 +15,7 @@ export default {
         'bele': ['Bellefair', 'serif'],
      },
      textUnderlineOffset: {
-      32: '36px',
+      32: '26px',
     }
     },
     
