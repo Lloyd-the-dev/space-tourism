@@ -16,9 +16,9 @@ function App() {
        <BrowserRouter>
           <Routes>
              <Route path='/' element={<Home/>}></Route>
-             <Route path='/moon' element={<Moon/>}></Route>
              <Route path='/crew' element={<Crew/>}></Route>
              <Route path='/technology' element={<Technology/>}></Route>
+             <Route path='/moon' element={<Moon/>}></Route>
              <Route path='/mars' element={<Mars/>}></Route>
              <Route path='/europa' element={<Europa/>}></Route>
              <Route path='/titan' element={<Titan/>}></Route>
