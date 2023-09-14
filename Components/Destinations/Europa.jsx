@@ -22,7 +22,7 @@ function Europa(){
                     <img src="/europa.png" alt="" className='w-2/5 mx-32 sm:mx-16 my-8 animate-spin-slow'/>
                     <div className='md:flex md:items-start md:flex-col md:w-2/5'>
                         <ul className='flex justify-between w-3/5 my-8 mx-auto md:mx-0'>
-                            <li><a href="/destination">MOON</a></li>
+                            <li><a href="/moon">MOON</a></li>
                             <li><a href="/mars">MARS</a></li>
                             <li><a href="/europa" className='text-white underline underline-offset-16 decoration-4'>EUROPA</a></li>
                             <li><a href="/titan">TITAN</a></li>
